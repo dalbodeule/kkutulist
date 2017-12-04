@@ -1,52 +1,33 @@
 <template>
   <div>
-    <nuxt/>
+    <headers/>
+    <div class="ad">
+      <!-- On Demand-main -->
+      <adsbygoogle ad-slot="4386636415"/>
+      <p>google AD</p>
+    </div>
+    <div id="contents" class="container">
+      <nuxt/>
+    </div>
+    <div style="margin-top: -20px" class="ad">
+      <adsbygoogle ad-slot="9403901631"/>
+      <p>google AD</p>
+    </div>
+    <footers/>
   </div>
 </template>
 
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.css'
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+// import Headers from '~/components/Header.vue'
+// import Footers from '~/components/Footer.vue'
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+export default {
+  /* components: {
+    Headers,
+    Footers
+  } */
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>

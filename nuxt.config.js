@@ -10,10 +10,10 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { 
-	height: '0.5em'
+	  height: '0.5em'
   },
   router: {
-	middleware: ['ssr-cookie']
+	  middleware: ['ssr-cookie']
   },
   /*
   ** Build configuration
@@ -33,14 +33,16 @@ module.exports = {
       }
     },
     vendor: [
-      'jquery'
+      'jquery',
+      'popper.js'
     ],
     plugins: [
       new webpack.ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery',
         jquery: 'jquery',
-        'window.jQuery': 'jquery'
+        'window.jQuery': 'jquery',
+        Popper: ['popper.js', 'default']
       })
     ]
   },
